@@ -9,4 +9,67 @@ body, html{
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+}
+
+.drum{
+  padding-top: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.drum .key{
+  padding: 20px;
+  border: 5px solid white;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.7)
+}
+
+.up{
+  flex: 1 1 0;
+}
+
+.up .key{
+  display: inline-block;
+}
+
+.down{
+  flex: 100%;
+  order: 3;
+}
+
+kbd, span{
+  display: block;
+
+}
+
+span{
+  font-size: 15px;
+}
+
+kbd{
+  font-size: 30px;
+}
+
+@media only screen  and (max-width: 1024px) {
+  .drum{
+    padding-top: 150px;
+  }
+}
+
+@media only screen  and (max-width: 500px) {
+  .drum{
+    padding-top: 50px;
+  }
+  .drum .key{
+    margin: 2px;
+  }
 }
