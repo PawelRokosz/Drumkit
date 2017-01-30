@@ -34,6 +34,10 @@ body, html{
   transition: all .08s ease;
 }
 
+.drum .up .key{
+  width: 80px;
+}
+
 .up{
   flex: 1 1 0;
 }
